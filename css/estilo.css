@@ -1,0 +1,66 @@
+/* =================================================================== */
+/* CÓDIGO FINAL PARA AJUSTAR O MENU FIXO EM TODAS AS TELAS    */
+/* =================================================================== */
+
+
+/* Estilo para telas GRANDES (computador e tablets na horizontal) 
+   Aplica-se a telas com 768px de largura ou mais */
+@media (min-width: 768px) {
+  body {
+    /* Ajuste este valor para ser a altura exata do seu menu no COMPUTADOR */
+    padding-top: 20px; 
+  }
+}
+
+
+/* Estilo para telas PEQUENAS (celular e tablets na vertical) 
+   Aplica-se a telas com 767px de largura ou menos */
+@media (max-width: 1000px) {
+  body {
+    /* A barra de menu no celular geralmente é um pouco diferente.
+       Ajuste este valor olhando o site no modo CELULAR. */
+    padding-top: 20px; 
+  }
+}
+/* ============================================ */
+/* CORREÇÕES DE EMERGÊNCIA PARA O MENU E LAYOUT   */
+/* ============================================ */
+
+@media screen and (max-width: 736px) {
+
+	/* Reposiciona a primeira seção para não ficar embaixo do cabeçalho */
+	#one {
+		padding-top: 5em !important;
+	}
+
+	/* Ajusta o tamanho da fonte do cabeçalho */
+	#header {
+		font-size: 0.8em;
+	}
+
+	/* Força o menu a ficar visível e na posição correta quando aberto */
+	body.is-menu-visible #menu {
+		transform: translateX(0);
+		opacity: 1;
+		visibility: visible;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
